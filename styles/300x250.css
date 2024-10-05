@@ -61,7 +61,7 @@
 }
 
 .search-input {
-  font-family: Arial sans-serif;
+  font-family: Arial, sans-serif;
   height: var(--input-height);
   font-size: 12px;
   width: var(--input-width);
