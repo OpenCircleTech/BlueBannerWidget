@@ -1,0 +1,143 @@
+:root {
+  --input-width: 140px;
+  --input-height: 35px;
+  --search-button-width: 86px;
+}
+
+.bannerBorder {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-form {
+  z-index: 9999;
+  background-color: #000;
+  width: 100%;
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  padding: 5px;
+  gap: 5px;
+  justify-content: center;
+  box-sizing: border-box;
+  display: grid;
+  font-family: Arial, sans-serif;
+  grid-template-areas:
+    'from btn'
+    'to btn';
+  grid-template-columns: var(--input-width) var(--search-button-width);
+}
+
+.to-input-wrapper {
+  grid-area: to;
+}
+
+.from-input-wrapper {
+  grid-area: from;
+}
+
+.search-wrapper {
+  position: relative;
+  display: flex;
+}
+
+.search-submit-btn {
+  bottom: unset;
+  grid-area: btn;
+  background-color: #0b96ec;
+  font-family: Arial, sans-serif;
+  transition: background-color .5s,color .5s;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.search-input {
+  font-family: Arial sans-serif;
+  height: var(--input-height);
+  font-size: 12px;
+  width: var(--input-width);
+  padding-left: 33px;
+  border-radius: 8px;
+  border: 1px solid #fff;
+  background-color: #fff;
+  outline: none;
+}
+
+.search-input[data-touched="true"]:invalid {
+  border-color: rgb(255, 73, 87);
+}
+.search-input[aria-invalid="true"] {
+  border-color: rgb(255, 73, 87);
+}
+
+.search-input-icon {
+  position: absolute;
+  top: 5px;
+  left: 8px;
+}
+
+.auto-complete {
+  display: none;
+}
+
+.auto-complete--active {
+  display: block;
+  position: absolute;
+  width: 100%;
+  background-color: #fff;
+  bottom: calc(100% + 2px);
+  margin: 0;
+  padding: 0;
+  max-height: 125px;
+  scrollbar-width: auto;
+  overflow: auto;
+  font-size: 9px;
+  font-weight: 700;
+  list-style: none;
+  font-family: Arial,sans-serif;
+}
+
+li {
+  color: #a7a7a7;
+  padding: 3px 6px;
+}
+
+li:hover {
+  background: #eeeeee;
+}
+
+
+.creativeProductImage {
+  width: 250px !important;
+  height: 140px !important;
+  background-size: cover !important;
+  background-position: center !important;
+  margin: 0 !important;
+}
+
+.creativeProductImageContainer {
+  margin: 0 !important;
+}
+
+.creativeProductInfo {
+  position: absolute !important;
+  display: flex !important;
+  flex-direction: column !important;
+  bottom: 90px !important;
+  width: 250px !important;
+  height: 40px !important;
+  background: #FFFFFFCB !important;
+}
+
+.creativeProductPrice {
+  margin-top: 16px !important;
+  position: relative !important;
+}
