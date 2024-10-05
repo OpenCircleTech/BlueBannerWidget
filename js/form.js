@@ -76,8 +76,6 @@ searchInputToRef.focus(function() {
 
 $("#submitBtn").click(function(event) {
   event.preventDefault();
-  handle()
-
   if (!from) {
     searchInputFromRef.attr("aria-invalid", "true")
   }
