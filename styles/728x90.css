@@ -9,7 +9,6 @@
   display: flex;
   flex-direction: column;
   overflow: visible !important;
-  margin-top: 200px !important;
 }
 
 .search-form {

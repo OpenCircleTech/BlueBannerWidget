@@ -8,6 +8,7 @@
 .bannerBorder {
   display: flex;
   flex-direction: column;
+  overflow: visible !important;
 }
 
 .search-form {
